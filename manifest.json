@@ -1,0 +1,23 @@
+{
+  "name": "MapU",
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "A plain text description",
+  "icons": {"128":"marker.png" },
+  "browser_action": {
+   "default_icon": "marker.png",
+    "default_title": "kdjgskshdglk hsdlfkhg slkdj",
+  "default_popup": "popup.html"  
+  },
+  "permissions": ["tabs","webNavigation","webRequest"],
+  "sandbox": {
+    "pages": [
+      "extra.html",
+      "popup.html"
+    ],
+    "content_security_policy":
+        "sandbox allow-scripts; script-src https://.*"
+  }
+  
+}
